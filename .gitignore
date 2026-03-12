@@ -1,10 +1,20 @@
+# Environment files
+.env*.local
 *.env
 *.local
 *.cache
-# Ignore node modules
+
+# Dependencies
+/node_modules
 node_modules/*
-/.env
+
+# Build outputs
+/.next
+/out
 /dist
+/build
+
+# IDE and System Files
 /.vscode
 .DS_Store
 *.log
