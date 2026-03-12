@@ -30,7 +30,7 @@ export default function SDGs() {
         <div className="sdgs-layout">
           <div className="sdg-panel">
             <div className="sdg-panel-header">
-              <div className="sdg-panel-icon" style={{ background: "linear-gradient(135deg, #0077B6, #023E8A)" }}>
+              <div className="sdg-panel-icon" style={{ background: "var(--navy)" }}>
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
               </div>
               <div>
@@ -51,7 +51,7 @@ export default function SDGs() {
           <div>
             <div className="sdg-panel">
               <div className="sdg-panel-header">
-                <div className="sdg-panel-icon" style={{ background: "linear-gradient(135deg, #D97706, #92400E)" }}>
+                <div className="sdg-panel-icon" style={{ background: "var(--gold)" }}>
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
                 </div>
                 <div>
@@ -62,7 +62,7 @@ export default function SDGs() {
               <div className="sdg-items">
                 {auItems.map((s, i) => (
                   <div key={i} className="sdg-item">
-                    <div className="sdg-badge" style={{ background: "rgba(232,160,48,0.18)", color: "var(--gold2)" }}>{s.badge}</div>
+                    <div className="sdg-badge" style={{ background: "rgba(230, 126, 34, 0.15)", color: "var(--gold)" }}>{s.badge}</div>
                     <div className="sdg-item-text"><strong>{s.text.split(".")[0]}.</strong>{s.text.split(".").slice(1).join(".")}</div>
                   </div>
                 ))}

@@ -10,7 +10,7 @@ export default function Flagship() {
     <section id="flagship">
       <div className="container">
         <div className="section-label">Flagship Activities</div>
-        <h2 className="section-title">Programmes in Action</h2>
+        <h2 className="section-title">Activities</h2>
         <p className="section-lead">Concrete, partner-supported activities that bring the CLI-MET vision to life, producing tangible outcomes for the region.</p>
         <div className="flagship-list">
           {activities.map((f, i) => (

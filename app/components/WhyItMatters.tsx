@@ -2,28 +2,30 @@ export default function WhyItMatters() {
   return (
     <section id="why">
       <div className="container">
-        <div className="why-layout">
-          <div className="why-left">
-            <div className="section-label">Why It Matters</div>
-            <h2 className="section-title">A Region at the Climate Frontline — and the Data Gap That Holds It Back</h2>
-            <div className="teal-divider"></div>
+        <div className="why-content">
+          <div className="section-label">Why It Matters</div>
+          <h2 className="section-title">WACREN CLI-MET</h2>
+          <div className="teal-divider"></div>
+          
+          <div className="rationale-section">
             <p className="why-text">
               West and Central Africa is among the world's most climate-vulnerable regions. Escalating floods in the Sahel, prolonged droughts across the Lake Chad Basin, sea-level rise threatening coastal cities, and erratic rainfall devastating smallholder agriculture. These are not future risks. They are today's realities, affecting hundreds of millions of people.
             </p>
-            <blockquote className="why-pull-quote">
-              <p>Climate challenges in West and Central Africa are inherently regional, yet the data, tools, and infrastructure needed to address them remain dangerously fragmented.</p>
-              <cite>CLI-MET Programme Rationale</cite>
-            </blockquote>
             <p className="why-text">
-              <strong>National meteorological and hydrological services</strong> across the region are often under-resourced, working with outdated equipment and limited access to Earth Observation data. <strong>Climate research institutions and universities</strong> lack the computing infrastructure to run regional climate models. <strong>Agricultural agencies</strong> advising millions of smallholder farmers have no reliable pipeline of timely, localised agro-meteorological data.
+              Climate challenges in West and Central Africa are inherently regional, yet the data, tools, and infrastructure needed to address them remain dangerously fragmented.
             </p>
-            <p className="why-text">
-              WACREN CLI-MET exists to close this gap by making high-quality, timely climate data <strong>accessible, shareable, and actionable</strong> across the region through a trusted, African-led research and education network infrastructure.
-            </p>
+            <div className="rationale-grid">
+              <p className="why-text">
+                National meteorological and hydrological services across the region are often under-resourced, working with outdated equipment and limited access to Earth Observation data. Climate research institutions and universities lack the computing infrastructure to run regional climate models. Agricultural agencies advising millions of smallholder farmers have no reliable pipeline of timely, localised agro-meteorological data.
+              </p>
+              <p className="why-text">
+                WACREN CLI-MET exists to close this gap by making high-quality, timely climate data accessible, shareable, and actionable across the region through a trusted, African-led research and education network infrastructure.
+              </p>
+            </div>
           </div>
 
-          <div className="why-right">
-            <div className="section-label" style={{ marginBottom: "24px" }}>Key Constraints</div>
+          <div className="why-problem-section">
+            <div className="section-label" style={{ marginBottom: "24px" }}>The Problem</div>
             <div className="challenge-cards">
               <div className="challenge-card">
                 <div className="challenge-icon red">
@@ -53,7 +55,7 @@ export default function WhyItMatters() {
                 </div>
               </div>
               <div className="challenge-card">
-                <div className="challenge-icon purple">
+                <div className="challenge-icon blue">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 22V12" />
                     <path d="M12 12C12 7 8 4 3 3c0 5 3 9 9 9" />
@@ -68,9 +70,9 @@ export default function WhyItMatters() {
             </div>
 
             <div className="opportunity-box">
-              <div style={{ fontFamily: "Space Mono, monospace", fontSize: "9px", letterSpacing: "2px", textTransform: "uppercase", color: "var(--teal2)", marginBottom: "10px" }}>The Opportunity</div>
-              <p style={{ fontFamily: "Playfair Display, serif", fontSize: "19px", lineHeight: "1.4", color: "white", marginBottom: "10px", fontStyle: "italic" }}>Connectivity is the multiplier that turns climate data into climate action.</p>
-              <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.5)", lineHeight: "1.65", fontWeight: "300" }}>WACREN's existing regional backbone is uniquely positioned to become the climate data highway that West and Central Africa urgently needs.</p>
+              <div className="opportunity-label">The Opportunity</div>
+              <p className="opportunity-quote">Connectivity is the multiplier that turns climate data into climate action.</p>
+              <p className="opportunity-text">WACREN's existing regional backbone is uniquely positioned to become the climate data highway that West and Central Africa urgently needs.</p>
             </div>
           </div>
         </div>

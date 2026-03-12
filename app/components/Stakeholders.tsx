@@ -13,11 +13,10 @@ export default function Stakeholders() {
   return (
     <div className="stakeholder-strip">
       <div className="container">
-        <div className="section-label" style={{ color: "var(--teal2)" }}>
-          <span style={{ width: "28px", height: "1px", background: "var(--teal2)", display: "inline-block", flexShrink: "0" }}></span>
+        <div className="section-label">
           Who Needs This
         </div>
-        <h2 className="section-title" style={{ color: "white", maxWidth: "640px", marginTop: "12px" }}>Built for the Institutions That Can't Afford to Wait</h2>
+        <h2 className="section-title" style={{ maxWidth: "640px", marginTop: "12px" }}>Built for the Institutions That Can't Afford to Wait</h2>
         <div className="stakeholder-grid">
           {stakeholders.map((s, i) => (
             <div key={i} className="stakeholder-card">

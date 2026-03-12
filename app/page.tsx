@@ -4,12 +4,9 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import WhyItMatters from "./components/WhyItMatters";
-import Stakeholders from "./components/Stakeholders";
 import Pillars from "./components/Pillars";
 import Flagship from "./components/Flagship";
 import SDGs from "./components/SDGs";
-import Impact from "./components/Impact";
-import WhoBenefits from "./components/WhoBenefits";
 import Alignment from "./components/Alignment";
 import Footer from "./components/Footer";
 
@@ -56,7 +53,7 @@ export default function Home() {
 
     document
       .querySelectorAll(
-        ".challenge-card, .pillar-card, .impact-card, .who-card, .alignment-card, .flagship-item, .stakeholder-card, .sdg-panel, .au-card, .stat-card"
+        ".challenge-card, .pillar-card, .alignment-card, .flagship-item, .sdg-panel, .au-card, .stat-card"
       )
       .forEach((el) => {
         (el as HTMLElement).style.opacity = "0";
@@ -83,12 +80,9 @@ export default function Home() {
       
       <Hero />
       <WhyItMatters />
-      <Stakeholders />
       <Pillars />
       <Flagship />
       <SDGs />
-      <Impact />
-      <WhoBenefits />
       <Alignment />
       
       <Footer 

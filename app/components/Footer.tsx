@@ -14,8 +14,8 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
             <div className="logo-block" style={{ marginBottom: "0" }}>
               <div className="logo-badge">CLI<br />MET</div>
               <div>
-                <div className="logo-text">WACREN</div>
-                <span className="logo-sub">CLI-MET Programme</span>
+                <div className="logo-name">WACREN</div>
+                <span className="logo-tag">CLI-MET Programme</span>
               </div>
             </div>
             <p className="footer-about">WACREN CLI-MET is the West and Central African Research and Education Network's regional programme for climate and meteorological infrastructure, building the digital backbone for a climate-resilient Africa.</p>
@@ -38,18 +38,17 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
           <div>
             <div className="footer-col-title">Programme</div>
             <ul className="footer-links">
-              <li><a href="#why">Why It Matters</a></li>
-              <li><a href="#pillars">Programme Pillars</a></li>
-              <li><a href="#flagship">Flagship Activities</a></li>
-              <li><a href="#impact">Impact</a></li>
-              <li><a href="#who">Who Benefits</a></li>
+              <li><a href="/#home">CLI-MET</a></li>
+              <li><a href="/#pillars">PILLARS</a></li>
+              <li><a href="/#flagship">ACTIVITIES</a></li>
+              <li><a href="/impact">IMPACT</a></li>
             </ul>
           </div>
           <div>
             <div className="footer-col-title">Alignment</div>
             <ul className="footer-links">
-              <li><a href="#sdgs">SDGs &amp; AU Agenda</a></li>
-              <li><a href="#alignment">Strategic Partners</a></li>
+              <li><a href="/#sdgs">TARGETS</a></li>
+              <li><a href="/#alignment">Strategic Alignment</a></li>
               <li><a href="#">AfricaConnect4</a></li>
               <li><a href="#">UNESCO Open Science</a></li>
               <li><a href="#">AU Agenda 2063</a></li>
@@ -58,10 +57,10 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
           <div>
             <div className="footer-col-title">Get Involved</div>
             <ul className="footer-links">
-              <li><a href="#">Partner With Us</a></li>
+              <li><a href="/contact">PARTNER WITH US</a></li>
               <li><a href="#">Join a Design Sprint</a></li>
               <li><a href="#">Training &amp; Capacity Building</a></li>
-              <li><a href="#">Contact WACREN</a></li>
+              <li><a href="/contact">Contact WACREN</a></li>
               <li><a href="#">Press &amp; Media</a></li>
             </ul>
           </div>

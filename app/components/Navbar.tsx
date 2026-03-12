@@ -20,29 +20,27 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, navHidden }:
       <div className={`header-outer ${navHidden ? "nav-hidden" : ""}`}>
         <header>
           {/* Logo */}
-          <a href="#" className="logo-block">
+          <a href="/" className="logo-block">
             <div className="logo-badge">CLI<br />MET</div>
             <div className="logo-text-wrap">
-              <span className="logo-text">WACREN</span>
-              <span className="logo-sub">CLI-MET</span>
+              <span className="logo-name">WACREN</span>
+              <span className="logo-tag">CLI-MET</span>
             </div>
           </a>
 
           {/* Desktop nav links */}
           <nav aria-label="Main navigation" className="nav-desktop">
             <ul className="nav-links">
-              <li><a href="#why">Why It Matters</a></li>
-              <li><a href="#pillars">Pillars</a></li>
-              <li><a href="#flagship">Activities</a></li>
-              <li><a href="#sdgs">SDGs &amp; AU Agenda</a></li>
-              <li><a href="#impact">Impact</a></li>
-              <li><a href="#who">Who Benefits</a></li>
+              <li><a href="/#home">CLI-MET</a></li>
+              <li><a href="/#pillars">PILLARS</a></li>
+              <li><a href="/#flagship">ACTIVITIES</a></li>
+              <li><a href="/#sdgs">TARGETS</a></li>
+              <li><a href="/impact">IMPACT</a></li>
             </ul>
           </nav>
 
-          {/* Right side: CTA + hamburger */}
           <div className="nav-actions">
-            <a href="#contact" className="nav-cta">Partner With Us</a>
+            <a href="/contact" className="nav-cta">PARTNER WITH US</a>
             <button 
               className="nav-hamburger" 
               id="hamburger" 
@@ -69,18 +67,16 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, navHidden }:
 
       {/* Mobile menu dropdown */}
       <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`} aria-hidden={!mobileMenuOpen}>
-        <a href="#why" className="mobile-menu-link" onClick={closeMobileMenu}>Why It Matters</a>
+        <a href="/#home" className="mobile-menu-link" onClick={closeMobileMenu}>CLI-MET</a>
         <div className="mobile-menu-divider"></div>
-        <a href="#pillars" className="mobile-menu-link" onClick={closeMobileMenu}>Pillars</a>
+        <a href="/#pillars" className="mobile-menu-link" onClick={closeMobileMenu}>PILLARS</a>
         <div className="mobile-menu-divider"></div>
-        <a href="#flagship" className="mobile-menu-link" onClick={closeMobileMenu}>Activities</a>
+        <a href="/#flagship" className="mobile-menu-link" onClick={closeMobileMenu}>ACTIVITIES</a>
         <div className="mobile-menu-divider"></div>
-        <a href="#sdgs" className="mobile-menu-link" onClick={closeMobileMenu}>SDGs &amp; AU Agenda</a>
+        <a href="/#sdgs" className="mobile-menu-link" onClick={closeMobileMenu}>TARGETS</a>
         <div className="mobile-menu-divider"></div>
-        <a href="#impact" className="mobile-menu-link" onClick={closeMobileMenu}>Impact</a>
-        <div className="mobile-menu-divider"></div>
-        <a href="#who" className="mobile-menu-link" onClick={closeMobileMenu}>Who Benefits</a>
-        <a href="#contact" className="mobile-menu-cta" onClick={closeMobileMenu}>
+        <a href="/impact" className="mobile-menu-link" onClick={closeMobileMenu}>IMPACT</a>
+        <a href="/contact" className="mobile-menu-cta" onClick={closeMobileMenu}>
           Partner With Us
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
         </a>
