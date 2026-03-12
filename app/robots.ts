@@ -1,12 +1,12 @@
-import type { MetadataRoute } from "next";
-import { siteConfig } from "@/lib/site";
+import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
-      userAgent: "*",
-      allow: "/",
+      userAgent: '*',
+      allow: '/',
+      disallow: '/private/',
     },
-    sitemap: `${siteConfig.url}/sitemap.xml`,
-  };
+    sitemap: 'https://climet.wacren.net/sitemap.xml',
+  }
 }

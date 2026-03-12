@@ -1,13 +1,12 @@
-import type { MetadataRoute } from "next";
-import { siteConfig } from "@/lib/site";
+import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: siteConfig.url,
+      url: 'https://climet.wacren.net',
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: 'monthly',
       priority: 1,
     },
-  ];
+  ]
 }
