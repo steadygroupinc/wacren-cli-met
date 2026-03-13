@@ -94,7 +94,7 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen }: NavbarProp
         </div>
         <div className="mobile-menu-footer">
           <Link href="/contact" className="mobile-menu-cta" onClick={closeMobileMenu}>
-            Partner With Us
+            PARTNER WITH US
           </Link>
         </div>
       </div>
