@@ -7,7 +7,7 @@ export default function WhyItMatters() {
           
           <div className="rationale-section">
             <p className="why-text">
-              West and Central Africa is among the world's most climate-vulnerable regions. Escalating floods in the Sahel, prolonged droughts across the Lake Chad Basin, sea-level rise threatening coastal cities, and erratic rainfall devastating smallholder agriculture. These are not future risks. They are today's realities, affecting hundreds of millions of people.
+              West and Central Africa is among the world&apos;s most climate-vulnerable regions. Escalating floods in the Sahel, prolonged droughts across the Lake Chad Basin, sea-level rise threatening coastal cities, and erratic rainfall devastating smallholder agriculture. These are not future risks. They are today&apos;s realities, affecting hundreds of millions of people.
             </p>
             <p className="why-text">
               Climate challenges in West and Central Africa are inherently regional, yet the data, tools, and infrastructure needed to address them remain dangerously fragmented.
@@ -70,7 +70,7 @@ export default function WhyItMatters() {
             <div className="opportunity-box">
               <div className="opportunity-label">The Opportunity</div>
               <p className="opportunity-quote">Connectivity is the multiplier that turns climate data into climate action.</p>
-              <p className="opportunity-text">WACREN's existing regional backbone is uniquely positioned to become the climate data highway that West and Central Africa urgently needs.</p>
+              <p className="opportunity-text">WACREN&apos;s existing regional backbone is uniquely positioned to become the climate data highway that West and Central Africa urgently needs.</p>
             </div>
           </div>
         </div>

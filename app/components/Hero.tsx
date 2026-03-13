@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <div className="hero" id="home">
@@ -16,11 +18,11 @@ export default function Hero() {
             WACREN CLI-MET leverages advanced digital connectivity, open science, and trusted research infrastructure to strengthen climate research, climate-informed decision-making, and sustainable development across the region — positioning Research and Education Networks as critical enablers of climate resilience.
           </p>
           <div className="hero-actions fade-up delay-3">
-            <a href="/#pillars" className="btn btn-primary">Explore the Programme</a>
-            <a href="/contact" className="btn btn-ghost">
+            <Link href="/#pillars" className="btn btn-primary">Explore the Programme</Link>
+            <Link href="/contact" className="btn btn-ghost">
               Partner With Us
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-            </a>
+            </Link>
           </div>
         </div>
 

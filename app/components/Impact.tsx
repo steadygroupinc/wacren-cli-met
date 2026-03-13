@@ -11,7 +11,7 @@ export default function Impact() {
       <div className="container">
         <div className="section-label">Programme Impact</div>
         <h2 className="section-title">What Success Looks Like</h2>
-        <p className="section-lead">Measurable, meaningful outcomes for researchers, policymakers, communities, and the region's climate future.</p>
+        <p className="section-lead">Measurable, meaningful outcomes for researchers, policymakers, communities, and the region&apos;s climate future.</p>
         <div className="impact-grid">
           {impacts.map((im, i) => (
             <div key={i} className="impact-card">

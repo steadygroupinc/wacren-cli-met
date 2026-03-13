@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 interface NavbarProps {
@@ -30,30 +31,30 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen }: NavbarProp
       <div className="header-outer">
         <header>
           {/* Logo */}
-          <a href="/" className="logo-block">
+          <Link href="/" className="logo-block">
             <div className="logo-badge">CLI<br />MET</div>
             <div className="logo-text-wrap">
               <span className="logo-name">WACREN</span>
               <span className="logo-tag">CLI-MET</span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop nav links */}
           <nav aria-label="Main navigation" className="nav-desktop">
             <ul className="nav-links">
-              <li><a href="/#home" className={isActive('/') ? 'active' : ''}>CLI-MET</a></li>
-              <li><a href="/#pillars">PILLARS</a></li>
-              <li><a href="/#flagship">ACTIVITIES</a></li>
+               <li><Link href="/#home" className={isActive('/') ? 'active' : ''}>CLI-MET</Link></li>
+              <li><Link href="/#pillars">PILLARS</Link></li>
+              <li><Link href="/#flagship">ACTIVITIES</Link></li>
               
               <li className="nav-divider-v"></li>
 
-              <li><a href="/community" className={isActive('/community') ? 'active' : ''}>COMMUNITY</a></li>
-              <li><a href="/impact" className={isActive('/impact') ? 'active' : ''}>IMPACT</a></li>
+               <li><Link href="/community" className={isActive('/community') ? 'active' : ''}>COMMUNITY</Link></li>
+              <li><Link href="/impact" className={isActive('/impact') ? 'active' : ''}>IMPACT</Link></li>
             </ul>
           </nav>
 
           <div className="nav-actions">
-            <a href="/contact" className="nav-cta">PARTNER WITH US</a>
+            <Link href="/contact" className="nav-cta">PARTNER WITH US</Link>
             <button 
               className="nav-hamburger" 
               id="hamburger" 
@@ -82,17 +83,17 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen }: NavbarProp
       {/* Mobile menu dropdown */}
       <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`} aria-hidden={!mobileMenuOpen}>
         <div className="mobile-menu-links">
-          <a href="/#home" className={`mobile-menu-link ${isActive('/') ? 'active' : ''}`} onClick={closeMobileMenu}>CLI-MET</a>
-          <a href="/#pillars" className="mobile-menu-link" onClick={closeMobileMenu}>PILLARS</a>
-          <a href="/#flagship" className="mobile-menu-link" onClick={closeMobileMenu}>ACTIVITIES</a>
+          <Link href="/#home" className={`mobile-menu-link ${isActive('/') ? 'active' : ''}`} onClick={closeMobileMenu}>CLI-MET</Link>
+          <Link href="/#pillars" className="mobile-menu-link" onClick={closeMobileMenu}>PILLARS</Link>
+          <Link href="/#flagship" className="mobile-menu-link" onClick={closeMobileMenu}>ACTIVITIES</Link>
           <div className="mobile-menu-divider"></div>
-          <a href="/community" className={`mobile-menu-link ${isActive('/community') ? 'active' : ''}`} onClick={closeMobileMenu}>COMMUNITY</a>
-          <a href="/impact" className={`mobile-menu-link ${isActive('/impact') ? 'active' : ''}`} onClick={closeMobileMenu}>IMPACT</a>
+          <Link href="/community" className={`mobile-menu-link ${isActive('/community') ? 'active' : ''}`} onClick={closeMobileMenu}>COMMUNITY</Link>
+          <Link href="/impact" className={`mobile-menu-link ${isActive('/impact') ? 'active' : ''}`} onClick={closeMobileMenu}>IMPACT</Link>
         </div>
         <div className="mobile-menu-footer">
-          <a href="/contact" className="mobile-menu-cta" onClick={closeMobileMenu}>
+          <Link href="/contact" className="mobile-menu-cta" onClick={closeMobileMenu}>
             Partner With Us
-          </a>
+          </Link>
         </div>
       </div>
     </>

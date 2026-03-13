@@ -24,8 +24,8 @@ export default function SDGs() {
       <div className="sdgs-bg-pattern"></div>
       <div className="container sdgs-inner">
         <div className="section-label sdgs-section-label">Global &amp; Continental Alignment</div>
-        <h2 className="section-title sdgs-title">Meeting the SDGs &amp; Africa's Climate Commitments</h2>
-        <p className="section-lead sdgs-lead">WACREN CLI-MET is foundational infrastructure that accelerates progress on the region's most critical global and continental obligations.</p>
+        <h2 className="section-title sdgs-title">Meeting the SDGs &amp; Africa&apos;s Climate Commitments</h2>
+        <p className="section-lead sdgs-lead">WACREN CLI-MET is foundational infrastructure that accelerates progress on the region&apos;s most critical global and continental obligations.</p>
 
         <div className="sdgs-layout" style={{ gap: "40px" }}>
           <div className="sdg-panel" style={{ flex: "1" }}>
@@ -58,7 +58,7 @@ export default function SDGs() {
                 </div>
                 <div>
                   <div className="sdg-panel-title">AU Agenda 2063</div>
-                  <div className="sdg-panel-subtitle">Africa's Climate & Technology Roadmap</div>
+                  <div className="sdg-panel-subtitle">Africa&apos;s Climate &amp; Technology Roadmap</div>
                 </div>
               </div>
               <div className="sdg-items">

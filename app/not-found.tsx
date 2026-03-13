@@ -34,10 +34,10 @@ export default function NotFound() {
 
         <div className="not-found-content">
           <h1 className="not-found-title fade-up">
-            Looks like we<br />lost that page...
+            Looks like we&apos;ve<br />lost that page...
           </h1>
           <p className="not-found-desc fade-up delay-1">
-            The climate is changing, and so is our website. The page you are looking for might have moved or doesn't exist anymore.
+            The climate is changing, and so is our website. The page you are looking for might have moved or doesn&apos;t exist anymore.
           </p>
           <div className="fade-up delay-2">
             <Link href="/" className="btn-404">

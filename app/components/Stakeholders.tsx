@@ -16,7 +16,7 @@ export default function Stakeholders() {
         <div className="section-label">
           Who Needs This
         </div>
-        <h2 className="section-title" style={{ maxWidth: "640px", marginTop: "12px" }}>Built for the Institutions That Can't Afford to Wait</h2>
+        <h2 className="section-title" style={{ maxWidth: "640px", marginTop: "12px" }}>Built for the Institutions That Can&apos;t Afford to Wait</h2>
         <div className="stakeholder-grid">
           {stakeholders.map((s, i) => (
             <div key={i} className="stakeholder-card">

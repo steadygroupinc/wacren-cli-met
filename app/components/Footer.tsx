@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 interface FooterProps {
   backToTopVisible: boolean;
   scrollToTop: (e: React.MouseEvent) => void;
@@ -18,7 +20,7 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
                 <span className="logo-tag">CLI-MET Programme</span>
               </div>
             </div>
-            <p className="footer-about">WACREN CLI-MET is the West and Central African Research and Education Network's regional programme for climate and meteorological infrastructure, building the digital backbone for a climate-resilient Africa.</p>
+            <p className="footer-about">WACREN CLI-MET is the West and Central African Research and Education Network&apos;s regional programme for climate and meteorological infrastructure, building the digital backbone for a climate-resilient Africa.</p>
 
             <div className="footer-social">
               {/* X / Twitter */}
@@ -38,17 +40,17 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
           <div>
             <div className="footer-col-title">Programme</div>
             <ul className="footer-links">
-              <li><a href="/#home">CLI-MET</a></li>
-              <li><a href="/#pillars">PILLARS</a></li>
-              <li><a href="/community">COMMUNITY</a></li>
-              <li><a href="/#flagship">ACTIVITIES</a></li>
-              <li><a href="/impact">IMPACT</a></li>
+              <li><Link href="/#home">CLI-MET</Link></li>
+              <li><Link href="/#pillars">PILLARS</Link></li>
+              <li><Link href="/community">COMMUNITY</Link></li>
+              <li><Link href="/#flagship">ACTIVITIES</Link></li>
+              <li><Link href="/impact">IMPACT</Link></li>
             </ul>
           </div>
           <div>
             <div className="footer-col-title">Alignment</div>
             <ul className="footer-links">
-              <li><a href="/#alignment">Strategic Alignment</a></li>
+              <li><Link href="/#alignment">Strategic Alignment</Link></li>
               <li><a href="#">AfricaConnect4</a></li>
               <li><a href="#">UNESCO Open Science</a></li>
               <li><a href="#">AU Agenda 2063</a></li>
@@ -57,10 +59,10 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
           <div>
             <div className="footer-col-title">Get Involved</div>
             <ul className="footer-links">
-              <li><a href="/contact">PARTNER WITH US</a></li>
+              <li><Link href="/contact">PARTNER WITH US</Link></li>
               <li><a href="#">Join a Design Sprint</a></li>
               <li><a href="#">Training &amp; Capacity Building</a></li>
-              <li><a href="/contact">Contact WACREN</a></li>
+              <li><Link href="/contact">Contact WACREN</Link></li>
               <li><a href="#">Press &amp; Media</a></li>
             </ul>
           </div>
