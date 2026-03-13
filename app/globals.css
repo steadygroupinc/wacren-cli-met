@@ -1144,8 +1144,14 @@ section { padding: 72px 0; }
 
 .impact-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
+}
+
+@media (max-width: 768px) {
+  .impact-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 .impact-card {
@@ -1486,11 +1492,16 @@ footer {
   .nav-cta { display: none !important; }
 }
 
+@media (max-width: 720px) {
+  .precursor-grid { grid-template-columns: 1fr !important; }
+}
+
 @media (max-width: 540px) {
   .hero-title { font-size: 36px; }
   .hero-actions { flex-direction: column; width: 100%; }
   .hero-actions .btn { width: 100%; text-align: center; }
   .pillars-grid { grid-template-columns: 1fr; }
+  .sdgs-layout { display: grid !important; grid-template-columns: 1fr !important; gap: 40px !important; }
   .footer-inner { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
   .contact-form-card { padding: 24px 20px; }
