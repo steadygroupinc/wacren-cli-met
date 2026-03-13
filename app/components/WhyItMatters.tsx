@@ -7,19 +7,16 @@ export default function WhyItMatters() {
           
           <div className="rationale-section">
             <p className="why-text">
-              West and Central Africa is among the world&apos;s most climate-vulnerable regions. Escalating floods in the Sahel, prolonged droughts across the Lake Chad Basin, sea-level rise threatening coastal cities, and erratic rainfall devastating smallholder agriculture. These are not future risks. They are today&apos;s realities, affecting hundreds of millions of people.
+              West and Central Africa is among the world&apos;s most climate-vulnerable regions. Escalating floods in the Sahel, prolonged droughts across the Lake Chad Basin, sea-level rise threatening coastal cities, and erratic rainfall devastating smallholder agriculture. These are not future risks. They are today&apos;s realities, affecting hundreds of millions of people. Climate challenges in West and Central Africa are inherently regional, yet the data, tools, and infrastructure needed to address them remain dangerously fragmented.
             </p>
+            
             <p className="why-text">
-              Climate challenges in West and Central Africa are inherently regional, yet the data, tools, and infrastructure needed to address them remain dangerously fragmented.
+              National meteorological and hydrological services across the region are often under-resourced, working with outdated equipment and limited access to Earth Observation data. Climate research institutions and universities lack the computing infrastructure to run regional climate models. Agricultural agencies advising millions of smallholder farmers have no reliable pipeline of timely, localised agro-meteorological data.
             </p>
-            <div className="rationale-grid">
-              <p className="why-text">
-                National meteorological and hydrological services across the region are often under-resourced, working with outdated equipment and limited access to Earth Observation data. Climate research institutions and universities lack the computing infrastructure to run regional climate models. Agricultural agencies advising millions of smallholder farmers have no reliable pipeline of timely, localised agro-meteorological data.
-              </p>
-              <p className="why-text">
-                WACREN CLI-MET exists to close this gap by making high-quality, timely climate data accessible, shareable, and actionable across the region through a trusted, African-led research and education network infrastructure.
-              </p>
-            </div>
+
+            <p className="why-text">
+              WACREN CLI-MET exists to close this gap by making high-quality, timely climate data accessible, shareable, and actionable across the region through a trusted, African-led research and education network infrastructure.
+            </p>
           </div>
 
           <div className="why-problem-section">
