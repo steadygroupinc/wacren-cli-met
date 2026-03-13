@@ -27,54 +27,60 @@ export default function SDGs() {
         <h2 className="section-title sdgs-title">Meeting the SDGs &amp; Africa's Climate Commitments</h2>
         <p className="section-lead sdgs-lead">WACREN CLI-MET is foundational infrastructure that accelerates progress on the region's most critical global and continental obligations.</p>
 
-        <div className="sdgs-layout">
-          <div className="sdg-panel">
+        <div className="sdgs-layout" style={{ gap: "40px" }}>
+          <div className="sdg-panel" style={{ flex: "1" }}>
             <div className="sdg-panel-header">
               <div className="sdg-panel-icon" style={{ background: "var(--navy)" }}>
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
               </div>
               <div>
                 <div className="sdg-panel-title">UN Sustainable Development Goals</div>
-                <div className="sdg-panel-subtitle">SDGs 2 · 6 · 7 · 13 · 17</div>
+                <div className="sdg-panel-subtitle">Key Targets: 2 · 6 · 7 · 13 · 17</div>
               </div>
             </div>
             <div className="sdg-items">
               {sdgs.map((s, i) => (
-                <div key={i} className="sdg-item">
-                  <div className="sdg-badge" style={{ background: s.color, color: "white" }}>{s.badge}</div>
-                  <div className="sdg-item-text"><strong>{s.text.split(".")[0]}.</strong>{s.text.split(".").slice(1).join(".")}</div>
+                <div key={i} className="sdg-item" style={{ padding: "16px 0", borderBottom: i < sdgs.length - 1 ? "1px solid rgba(0,0,0,0.05)" : "none" }}>
+                  <div className="sdg-badge" style={{ background: s.color, color: "white", marginBottom: "8px" }}>{s.badge}</div>
+                  <div className="sdg-item-text" style={{ fontSize: "14.5px" }}>
+                    <strong>{s.text.split(".")[0]}.</strong>{s.text.split(".").slice(1).join(".")}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div>
-            <div className="sdg-panel">
+          <div style={{ flex: "1" }}>
+            <div className="sdg-panel" style={{ marginBottom: "30px" }}>
               <div className="sdg-panel-header">
                 <div className="sdg-panel-icon" style={{ background: "var(--gold)" }}>
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
                 </div>
                 <div>
-                  <div className="sdg-panel-title">AU Agenda 2063 &amp; Climate Frameworks</div>
-                  <div className="sdg-panel-subtitle">Digital · Climate · Science &amp; Technology</div>
+                  <div className="sdg-panel-title">AU Agenda 2063</div>
+                  <div className="sdg-panel-subtitle">Africa's Climate & Technology Roadmap</div>
                 </div>
               </div>
               <div className="sdg-items">
                 {auItems.map((s, i) => (
-                  <div key={i} className="sdg-item">
-                    <div className="sdg-badge" style={{ background: "rgba(230, 126, 34, 0.15)", color: "var(--gold)" }}>{s.badge}</div>
-                    <div className="sdg-item-text"><strong>{s.text.split(".")[0]}.</strong>{s.text.split(".").slice(1).join(".")}</div>
+                  <div key={i} className="sdg-item" style={{ padding: "12px 0" }}>
+                    <div className="sdg-badge" style={{ background: "rgba(217, 119, 6, 0.1)", color: "#B45309", fontSize: "11px" }}>{s.badge}</div>
+                    <div className="sdg-item-text" style={{ fontSize: "14px" }}>
+                      <strong>{s.text.split(".")[0]}.</strong>{s.text.split(".").slice(1).join(".")}
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="au-grid">
+            <div className="au-grid" style={{ gridTemplateColumns: "1fr", gap: "15px" }}>
               {partners.map((a, i) => (
-                <div key={i} className="au-card">
-                  <div className="au-card-icon">{a.icon}</div>
-                  <div className="au-card-title">{a.title}</div>
-                  <div className="au-card-text">{a.text}</div>
+                <div key={i} className="au-card" style={{ padding: "20px", display: "flex", alignItems: "flex-start", gap: "15px" }}>
+                  <div className="au-card-icon" style={{ marginTop: "3px", flexShrink: 0 }}>{a.icon}</div>
+                  <div>
+                    <div className="au-card-title" style={{ fontSize: "14px", fontWeight: "700", marginBottom: "4px" }}>{a.title}</div>
+                    <div className="au-card-text" style={{ fontSize: "13px", lineHeight: "1.5" }}>{a.text}</div>
+                  </div>
                 </div>
               ))}
             </div>

@@ -6,13 +6,11 @@ import Hero from "./components/Hero";
 import WhyItMatters from "./components/WhyItMatters";
 import Pillars from "./components/Pillars";
 import Flagship from "./components/Flagship";
-import SDGs from "./components/SDGs";
 import Alignment from "./components/Alignment";
 import Footer from "./components/Footer";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [navHidden, setNavHidden] = useState(false);
   const [backToTopVisible, setBackToTopVisible] = useState(false);
 
   useEffect(() => {
@@ -21,10 +19,7 @@ export default function Home() {
     const handleScroll = () => {
       const y = window.scrollY;
       if (y > 300 && y > lastScroll) {
-        setNavHidden(true);
         setMobileMenuOpen(false);
-      } else {
-        setNavHidden(false);
       }
 
       if (y > 400) {
@@ -53,7 +48,7 @@ export default function Home() {
 
     document
       .querySelectorAll(
-        ".challenge-card, .pillar-card, .alignment-card, .flagship-item, .sdg-panel, .au-card, .stat-card"
+        ".challenge-card, .pillar-card, .flagship-item, .stat-card, .alignment-card"
       )
       .forEach((el) => {
         (el as HTMLElement).style.opacity = "0";
@@ -75,14 +70,12 @@ export default function Home() {
       <Navbar 
         mobileMenuOpen={mobileMenuOpen} 
         setMobileMenuOpen={setMobileMenuOpen} 
-        navHidden={navHidden} 
       />
       
       <Hero />
       <WhyItMatters />
       <Pillars />
       <Flagship />
-      <SDGs />
       <Alignment />
       
       <Footer 

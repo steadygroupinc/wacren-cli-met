@@ -7,7 +7,6 @@ import Link from "next/link";
 
 export default function ContactPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [navHidden, setNavHidden] = useState(false);
   const [backToTopVisible, setBackToTopVisible] = useState(false);
   const [showEmail, setShowEmail] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
@@ -60,7 +59,6 @@ export default function ContactPage() {
       <Navbar 
         mobileMenuOpen={mobileMenuOpen} 
         setMobileMenuOpen={setMobileMenuOpen} 
-        navHidden={navHidden} 
       />
       
       <main className="contact-page">
@@ -69,8 +67,7 @@ export default function ContactPage() {
             {/* Left Column: Info */}
             <div className="contact-info">
               <div className="contact-info-header">
-                <div className="contact-info-label">Contact Us</div>
-                <h1 className="contact-title">Get in Touch</h1>
+                <h1 className="contact-title">Get in touch</h1>
                 <p className="contact-subtitle">
                   We'd love to hear from you. Send us a message and we'll respond as soon as possible.
                 </p>
@@ -113,10 +110,6 @@ export default function ContactPage() {
                   </p>
                 </div>
 
-                <div className="contact-detail-item">
-                  <h3>Regional Presence</h3>
-                  <p>Driving digital infrastructure for climate resilience from the heart of West & Central Africa.</p>
-                </div>
               </div>
             </div>
 

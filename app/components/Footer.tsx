@@ -40,6 +40,7 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
             <ul className="footer-links">
               <li><a href="/#home">CLI-MET</a></li>
               <li><a href="/#pillars">PILLARS</a></li>
+              <li><a href="/community">COMMUNITY</a></li>
               <li><a href="/#flagship">ACTIVITIES</a></li>
               <li><a href="/impact">IMPACT</a></li>
             </ul>
@@ -47,7 +48,6 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
           <div>
             <div className="footer-col-title">Alignment</div>
             <ul className="footer-links">
-              <li><a href="/#sdgs">TARGETS</a></li>
               <li><a href="/#alignment">Strategic Alignment</a></li>
               <li><a href="#">AfricaConnect4</a></li>
               <li><a href="#">UNESCO Open Science</a></li>

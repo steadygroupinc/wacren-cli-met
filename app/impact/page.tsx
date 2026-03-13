@@ -3,12 +3,11 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Impact from "../components/Impact";
-import WhoBenefits from "../components/WhoBenefits";
+import SDGs from "../components/SDGs";
 import Footer from "../components/Footer";
 
 export default function ImpactPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [navHidden, setNavHidden] = useState(false);
   const [backToTopVisible, setBackToTopVisible] = useState(false);
 
   useEffect(() => {
@@ -17,10 +16,7 @@ export default function ImpactPage() {
     const handleScroll = () => {
       const y = window.scrollY;
       if (y > 300 && y > lastScroll) {
-        setNavHidden(true);
         setMobileMenuOpen(false);
-      } else {
-        setNavHidden(false);
       }
 
       if (y > 400) {
@@ -49,7 +45,7 @@ export default function ImpactPage() {
 
     document
       .querySelectorAll(
-        ".impact-card, .who-card"
+        ".impact-card, .sdg-panel, .au-card"
       )
       .forEach((el) => {
         (el as HTMLElement).style.opacity = "0";
@@ -71,12 +67,11 @@ export default function ImpactPage() {
       <Navbar 
         mobileMenuOpen={mobileMenuOpen} 
         setMobileMenuOpen={setMobileMenuOpen} 
-        navHidden={navHidden} 
       />
       
       <main style={{ paddingTop: "100px" }}>
         <Impact />
-        <WhoBenefits />
+        <SDGs />
       </main>
       
       <Footer 

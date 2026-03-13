@@ -1,12 +1,15 @@
 "use client";
 
+import { usePathname } from 'next/navigation';
+
 interface NavbarProps {
   mobileMenuOpen: boolean;
   setMobileMenuOpen: (open: boolean) => void;
-  navHidden: boolean;
 }
 
-export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, navHidden }: NavbarProps) {
+export default function Navbar({ mobileMenuOpen, setMobileMenuOpen }: NavbarProps) {
+  const pathname = usePathname();
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
@@ -15,9 +18,16 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, navHidden }:
     setMobileMenuOpen(false);
   };
 
+  // Helper to determine active state
+  const isActive = (path: string) => {
+    if (path === '/' && pathname === '/') return true;
+    if (path !== '/' && pathname.startsWith(path)) return true;
+    return false;
+  };
+
   return (
     <>
-      <div className={`header-outer ${navHidden ? "nav-hidden" : ""}`}>
+      <div className="header-outer">
         <header>
           {/* Logo */}
           <a href="/" className="logo-block">
@@ -31,11 +41,14 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, navHidden }:
           {/* Desktop nav links */}
           <nav aria-label="Main navigation" className="nav-desktop">
             <ul className="nav-links">
-              <li><a href="/#home">CLI-MET</a></li>
+              <li><a href="/#home" className={isActive('/') ? 'active' : ''}>CLI-MET</a></li>
               <li><a href="/#pillars">PILLARS</a></li>
               <li><a href="/#flagship">ACTIVITIES</a></li>
-              <li><a href="/#sdgs">TARGETS</a></li>
-              <li><a href="/impact">IMPACT</a></li>
+              
+              <li className="nav-divider-v"></li>
+
+              <li><a href="/community" className={isActive('/community') ? 'active' : ''}>COMMUNITY</a></li>
+              <li><a href="/impact" className={isActive('/impact') ? 'active' : ''}>IMPACT</a></li>
             </ul>
           </nav>
 
@@ -62,24 +75,25 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, navHidden }:
               )}
             </button>
           </div>
+
         </header>
       </div>
 
       {/* Mobile menu dropdown */}
       <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`} aria-hidden={!mobileMenuOpen}>
-        <a href="/#home" className="mobile-menu-link" onClick={closeMobileMenu}>CLI-MET</a>
-        <div className="mobile-menu-divider"></div>
-        <a href="/#pillars" className="mobile-menu-link" onClick={closeMobileMenu}>PILLARS</a>
-        <div className="mobile-menu-divider"></div>
-        <a href="/#flagship" className="mobile-menu-link" onClick={closeMobileMenu}>ACTIVITIES</a>
-        <div className="mobile-menu-divider"></div>
-        <a href="/#sdgs" className="mobile-menu-link" onClick={closeMobileMenu}>TARGETS</a>
-        <div className="mobile-menu-divider"></div>
-        <a href="/impact" className="mobile-menu-link" onClick={closeMobileMenu}>IMPACT</a>
-        <a href="/contact" className="mobile-menu-cta" onClick={closeMobileMenu}>
-          Partner With Us
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-        </a>
+        <div className="mobile-menu-links">
+          <a href="/#home" className={`mobile-menu-link ${isActive('/') ? 'active' : ''}`} onClick={closeMobileMenu}>CLI-MET</a>
+          <a href="/#pillars" className="mobile-menu-link" onClick={closeMobileMenu}>PILLARS</a>
+          <a href="/#flagship" className="mobile-menu-link" onClick={closeMobileMenu}>ACTIVITIES</a>
+          <div className="mobile-menu-divider"></div>
+          <a href="/community" className={`mobile-menu-link ${isActive('/community') ? 'active' : ''}`} onClick={closeMobileMenu}>COMMUNITY</a>
+          <a href="/impact" className={`mobile-menu-link ${isActive('/impact') ? 'active' : ''}`} onClick={closeMobileMenu}>IMPACT</a>
+        </div>
+        <div className="mobile-menu-footer">
+          <a href="/contact" className="mobile-menu-cta" onClick={closeMobileMenu}>
+            Partner With Us
+          </a>
+        </div>
       </div>
     </>
   );

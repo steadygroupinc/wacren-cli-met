@@ -3,9 +3,7 @@ export default function WhyItMatters() {
     <section id="why">
       <div className="container">
         <div className="why-content">
-          <div className="section-label">Why It Matters</div>
           <h2 className="section-title">WACREN CLI-MET</h2>
-          <div className="teal-divider"></div>
           
           <div className="rationale-section">
             <p className="why-text">
