@@ -381,13 +381,13 @@ header {
 }
 
 .hero h1 {
-  font-family: var(--font-playfair), Georgia, serif;
-  font-size: clamp(38px, 6vw, 72px);
-  line-height: 1.05;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: clamp(32px, 5vw, 60px);
+  line-height: 1.1;
   color: white;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
 }
 
 .hero h1 .h1-accent {
