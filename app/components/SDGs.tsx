@@ -16,7 +16,6 @@ export default function SDGs() {
   const partners = [
     { title: "AfricaConnect4 / EU Global Gateway", text: "CLI-MET is anchored within the AfricaConnect4 framework, leveraging EU Global Gateway investment to build the research connectivity backbone.", icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg> },
     { title: "UNESCO Open Science Recommendation", text: "CLI-MET implements UNESCO's Open Science principles across climate research, making African climate knowledge globally accessible and reusable.", icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg> },
-    { title: "WMO Global Climate Observing System", text: "WMO-compliant weather stations and data standards position CLI-MET as a regional contributor to the global climate observation network.", icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z" /></svg> },
   ];
 
   return (
