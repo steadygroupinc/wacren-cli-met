@@ -49,11 +49,22 @@ export default function PrecursorPage() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const focusAreas = [
-    { title: "Data Readiness", desc: "Standardizing climate and meteorological data flows to ensure interoperability across R&E networks.", icon: "📊" },
-    { title: "Regional Connectivity", desc: "Leveraging the WACREN backbone to provide ultra-high-speed access to Earth Observation datasets.", icon: "🌐" },
-    { title: "Capacity Building", desc: "Training regional scientists in high-performance computing and open science practices.", icon: "🎓" },
-    { title: "Infrastructure Setup", desc: "Deploying LoRaWAN weather stations and regional compute nodes for localized modelling.", icon: "🏗️" }
+  const precursorLinks = [
+    {
+      title: "WACREN-ICTP-OAU Collaboration at Ile-Ife Nigeria",
+      description: "Collaborating to conduct real-time monitoring of surface water pollution using IoT-based sensors",
+      url: "https://indico.wacren.net/event/207/contributions/1729/subcontributions/38/attachments/686/977/REGIONAL%20ACTIVITIES%20OF%20THE%20WACREN-ICTP%20PROGRAMME%20.pdf",
+    },
+    {
+      title: "WACREN-ITCP Collaboration with GMet and GARNET",
+      description: "A workshop as part of a developing program to boost the deployment of sensor networks and LoraWAN gateways in WACREN NRENs for climate and weather research support services",
+      url: "https://indico.wacren.net/event/160/",
+    },
+    {
+      title: "AfricaConnect Meeting and Workshop on IoT-Based Acquisition of Research Data for Scientific Computing",
+      description: "An activity designed to introduce IT staff, engineers and scientists from Research and Education Networks (RENs) in the Africa to operating a network-wide service for the scientific application of Internet of Things (IoT) sensors and technology.",
+      url: "https://indico.ictp.it/event/10787/overview",
+    },
   ];
 
   return (
@@ -61,64 +72,57 @@ export default function PrecursorPage() {
       <Navbar mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
       
       <main className="precursor-page" style={{ paddingTop: "100px", minHeight: "100vh", background: "var(--bg-white)" }}>
-        {/* Hero Section */}
-        <section style={{ padding: "80px 0", background: "linear-gradient(180deg, rgba(0,102,204,0.05) 0%, rgba(255,255,255,0) 100%)" }}>
-          <div className="container">
-            <div className="section-label reveal">Initiative Genesis</div>
-            <h1 className="section-title reveal" style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)", marginBottom: "24px" }}>
-              The <span className="h1-accent">Precursor</span> Phase
-            </h1>
-            <p className="section-lead reveal" style={{ maxWidth: "800px" }}>
-              Before full-scale deployment, the CLI-MET Precursor phase establishes the foundational digital architecture, data standards, and regional partnerships required for a resilient African climate ecosystem.
-            </p>
-          </div>
-        </section>
-
         {/* Content Section */}
         <section style={{ padding: "100px 0" }}>
           <div className="container">
-            <div className="precursor-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "32px" }}>
-              {focusAreas.map((area, idx) => (
-                <div key={idx} className="precursor-card reveal" style={{ 
-                  padding: "40px", 
-                  backgroundColor: "white", 
-                  borderRadius: "24px", 
-                  boxShadow: "0 10px 40px rgba(0,0,0,0.04)",
-                  border: "1px solid rgba(0,0,0,0.03)",
-                  transition: "transform 0.3s ease"
-                }}>
-                  <div style={{ fontSize: "40px", marginBottom: "20px" }}>{area.icon}</div>
-                  <h3 style={{ fontSize: "20px", fontWeight: "700", marginBottom: "12px", color: "var(--navy)" }}>{area.title}</h3>
-                  <p style={{ color: "var(--text-gray)", lineHeight: "1.6" }}>{area.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Timeline/Strategic Section */}
-        <section style={{ padding: "100px 0", backgroundColor: "var(--navy)", color: "white", borderRadius: "60px 60px 0 0" }}>
-          <div className="container">
-            <div className="reveal" style={{ maxWidth: "700px" }}>
-              <div className="section-label" style={{ color: "var(--gold)" }}>Strategic Roadmap</div>
-              <h2 className="section-title" style={{ color: "white" }}>Building the Backbone</h2>
-              <p style={{ opacity: "0.8", fontSize: "18px", marginBottom: "40px" }}>
-                The Precursor phase is a multi-stakeholder collaboration designed to de-risk the regional implementation by validating connectivity protocols and data governance models.
-              </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
-                {[
-                  "Consolidating Regional Earth Observation feeds",
-                  "Establishing FAIR data discovery portals",
-                  "Piloting HPC-as-a-Service for climate scientists"
-                ].map((item, i) => (
-                  <div key={i} style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                    <div style={{ width: "24px", height: "24px", borderRadius: "12px", background: "var(--gold)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                    </div>
-                    <span>{item}</span>
+            <div className="section-label" style={{ marginBottom: "12px" }}>Precursor Phase</div>
+            <h2 className="section-title" style={{ marginBottom: "16px" }}>Key outputs and reference materials</h2>
+            <p className="section-lead" style={{ maxWidth: "760px", margin: "0 auto 40px" }}>
+              The precursor phase established a foundation for regional collaboration, live sensor pilots, and shared climate data practices. Explore the foundational documents and workshop summaries below.
+            </p>
+            <div className="precursor-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
+              {precursorLinks.map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="precursor-card reveal"
+                  style={{
+                    padding: "40px",
+                    backgroundColor: "white",
+                    borderRadius: "24px",
+                    boxShadow: "0 10px 40px rgba(0,0,0,0.04)",
+                    border: "1px solid rgba(0,0,0,0.03)",
+                    transition: "transform 0.3s ease",
+                    textDecoration: "none",
+                    color: "inherit",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <div>
+                    <h3 style={{ fontSize: "20px", fontWeight: "700", marginBottom: "12px", color: "var(--navy)" }}>{item.title}</h3>
+                    <p style={{ color: "var(--text-gray)", lineHeight: "1.6" }}>{item.description}</p>
                   </div>
-                ))}
-              </div>
+                  <div style={{ marginTop: "26px" }}>
+                    <span
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        fontWeight: 600,
+                        color: "var(--teal)",
+                        fontSize: "14px",
+                      }}
+                    >
+                      Learn more
+                      <span aria-hidden="true">↗</span>
+                    </span>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </section>

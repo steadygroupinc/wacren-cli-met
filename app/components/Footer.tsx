@@ -45,10 +45,10 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
             <div className="footer-col-title">Programme</div>
             <ul className="footer-links">
               <li><Link href="/#home">CLI-MET</Link></li>
-              <li><Link href="/#pillars">PILLARS</Link></li>
-              <li><Link href="/community">COMMUNITY</Link></li>
-              <li><Link href="/#flagship">ACTIVITIES</Link></li>
-              <li><Link href="/impact">IMPACT</Link></li>
+              <li><Link href="/#pillars">Pillars</Link></li>
+              <li><Link href="/community">Community</Link></li>
+              <li><Link href="/#flagship">Activities</Link></li>
+              <li><Link href="/impact">Impact</Link></li>
             </ul>
           </div>
           <div>

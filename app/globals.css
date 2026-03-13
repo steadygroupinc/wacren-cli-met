@@ -221,6 +221,8 @@ header {
   top: 86px;
   right: 40px;
   width: 280px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
   background: var(--white);
   border-radius: 16px;
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
@@ -727,7 +729,7 @@ section { padding: 72px 0; }
   line-height: 1.35;
   color: white;
   margin-bottom: 20px;
-  font-style: italic;
+  font-style: normal;
 }
 
 .opportunity-text {
@@ -975,6 +977,20 @@ section { padding: 72px 0; }
   transition: all 0.22s;
 }
 
+@media (max-width: 720px) {
+  .flagship-item {
+    grid-template-columns: 60px 1fr;
+    gap: 16px;
+    padding: 20px 18px;
+  }
+
+  .flagship-item .flagship-tag {
+    grid-column: 1 / -1;
+    margin-top: 14px;
+    justify-self: start;
+  }
+}
+
 /* ─── SDGs ─── */
 #sdgs { background: var(--navy); overflow: hidden; position: relative; }
 
@@ -1168,7 +1184,7 @@ section { padding: 72px 0; }
 }
 
 .impact-card-text {
-  font-size: 13px;
+  font-size: 14.5px;
   color: var(--muted);
   line-height: 1.65;
   font-weight: 400;
@@ -1443,7 +1459,7 @@ footer {
   .impact-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1024px) {
   .nav-desktop { display: none !important; }
   .nav-icon-btn { display: none !important; }
   .nav-hamburger { display: flex !important; }
@@ -1466,6 +1482,8 @@ footer {
   .footer-inner { grid-template-columns: 1fr 1fr; gap: 40px; }
   section { padding: 60px 0; }
   .container { padding: 0 20px; }
+
+  .nav-cta { display: none !important; }
 }
 
 @media (max-width: 540px) {
