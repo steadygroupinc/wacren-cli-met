@@ -49,8 +49,8 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen }: NavbarProp
               <li className="nav-divider-v"></li>
 
                <li><Link href="/community" className={isActive('/community') ? 'active' : ''}>COMMUNITY</Link></li>
-              <li><Link href="/impact" className={isActive('/impact') ? 'active' : ''}>IMPACT</Link></li>
               <li><Link href="/precursor" className={isActive('/precursor') ? 'active' : ''}>PRECURSOR</Link></li>
+              <li><Link href="/impact" className={isActive('/impact') ? 'active' : ''}>IMPACT</Link></li>
             </ul>
           </nav>
 
@@ -89,8 +89,8 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen }: NavbarProp
           <Link href="/#flagship" className="mobile-menu-link" onClick={closeMobileMenu}>ACTIVITIES</Link>
           <div className="mobile-menu-divider"></div>
           <Link href="/community" className={`mobile-menu-link ${isActive('/community') ? 'active' : ''}`} onClick={closeMobileMenu}>COMMUNITY</Link>
-          <Link href="/impact" className={`mobile-menu-link ${isActive('/impact') ? 'active' : ''}`} onClick={closeMobileMenu}>IMPACT</Link>
           <Link href="/precursor" className={`mobile-menu-link ${isActive('/precursor') ? 'active' : ''}`} onClick={closeMobileMenu}>PRECURSOR</Link>
+          <Link href="/impact" className={`mobile-menu-link ${isActive('/impact') ? 'active' : ''}`} onClick={closeMobileMenu}>IMPACT</Link>
         </div>
         <div className="mobile-menu-footer">
           <Link href="/contact" className="mobile-menu-cta" onClick={closeMobileMenu}>
