@@ -56,18 +56,12 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
             <ul className="footer-links">
               <li><Link href="/#alignment">Strategic Alignment</Link></li>
               <li><a href="#">AfricaConnect4</a></li>
-              <li><a href="#">UNESCO Open Science</a></li>
-              <li><a href="#">AU Agenda 2063</a></li>
             </ul>
           </div>
           <div>
             <div className="footer-col-title">Get Involved</div>
             <ul className="footer-links">
               <li><Link href="/contact">PARTNER WITH US</Link></li>
-              <li><a href="#">Join a Design Sprint</a></li>
-              <li><a href="#">Training &amp; Capacity Building</a></li>
-              <li><Link href="/contact">Contact WACREN</Link></li>
-              <li><a href="#">Press &amp; Media</a></li>
             </ul>
           </div>
         </div>
