@@ -1171,7 +1171,7 @@ section { padding: 72px 0; }
   font-size: 13px;
   color: var(--muted);
   line-height: 1.65;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* ─── WHO ─── */
@@ -1224,7 +1224,7 @@ section { padding: 72px 0; }
   font-size: 13px;
   color: var(--muted);
   line-height: 1.65;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* ─── ALIGNMENT ─── */
@@ -1277,7 +1277,7 @@ section { padding: 72px 0; }
   font-size: 12px;
   color: var(--muted);
   line-height: 1.55;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* ─── FOOTER ─── */
