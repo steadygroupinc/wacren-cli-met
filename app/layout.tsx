@@ -1,24 +1,11 @@
 import type { Metadata } from "next";
-import { Outfit, Playfair_Display, Space_Mono } from "next/font/google";
+import { Outfit } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
 
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
-  display: "swap",
-});
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  display: "swap",
-});
-
-const spaceMono = Space_Mono({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--font-space-mono",
   display: "swap",
 });
 
@@ -63,7 +50,7 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} ${playfair.variable} ${spaceMono.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${outfit.variable}`} suppressHydrationWarning>
       <body suppressHydrationWarning>{children}</body>
     </html>
   );
