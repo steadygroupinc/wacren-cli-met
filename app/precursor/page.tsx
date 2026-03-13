@@ -81,9 +81,9 @@ export default function PrecursorPage() {
         <section style={{ padding: "100px 0" }}>
           <div className="container">
             <div className="section-label" style={{ marginBottom: "12px" }}>Precursor Phase</div>
-            <h2 className="section-title" style={{ marginBottom: "16px" }}>Key outputs and reference materials</h2>
-            <p className="section-lead" style={{ maxWidth: "760px", margin: "0 auto 40px" }}>
-              The precursor phase established a foundation for regional collaboration, live sensor pilots, and shared climate data practices. Explore the foundational documents and workshop summaries below.
+            <h2 className="section-title" style={{ marginBottom: "8px" }}>Growing Collaborations, Partnerships and Activities</h2>
+            <p className="section-lead" style={{ width: "100%", margin: "0 0 30px 0", textAlign: "left" }}>
+              The precursor phase established a foundation of national and regional collaborations and partnerships serving as building blocks and leading up to the current phase of the CLI-MET programme.
             </p>
             <div className="precursor-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(280px, 1fr))", gap: "32px" }}>
               {precursorLinks.map((item, idx) => (
