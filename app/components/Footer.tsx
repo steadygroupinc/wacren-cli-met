@@ -61,7 +61,7 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
           <div>
             <div className="footer-col-title">Get Involved</div>
             <ul className="footer-links">
-              <li><Link href="/contact">PARTNER WITH US</Link></li>
+              <li><Link href="/contact">Partner with us</Link></li>
             </ul>
           </div>
         </div>

@@ -391,8 +391,7 @@ header {
 }
 
 .hero h1 .h1-accent {
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--gold);
 }
 
