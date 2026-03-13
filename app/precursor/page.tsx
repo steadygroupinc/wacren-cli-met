@@ -51,6 +51,11 @@ export default function PrecursorPage() {
 
   const precursorLinks = [
     {
+      title: "WACREN Climate Programme: Catalysing Climate Solutions",
+      description: "Initial description, justification and partnerships for the WACREN CLI-MET programme",
+      url: "https://wacren.net/en/newsletter/wacren-climate-programme-catalysing-climate-solutions/",
+    },
+    {
       title: "WACREN-ICTP-OAU Collaboration at Ile-Ife Nigeria",
       description: "Collaborating to conduct real-time monitoring of surface water pollution using IoT-based sensors",
       url: "https://indico.wacren.net/event/207/contributions/1729/subcontributions/38/attachments/686/977/REGIONAL%20ACTIVITIES%20OF%20THE%20WACREN-ICTP%20PROGRAMME%20.pdf",
@@ -80,7 +85,7 @@ export default function PrecursorPage() {
             <p className="section-lead" style={{ maxWidth: "760px", margin: "0 auto 40px" }}>
               The precursor phase established a foundation for regional collaboration, live sensor pilots, and shared climate data practices. Explore the foundational documents and workshop summaries below.
             </p>
-            <div className="precursor-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
+            <div className="precursor-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(280px, 1fr))", gap: "32px" }}>
               {precursorLinks.map((item, idx) => (
                 <a
                   key={idx}
