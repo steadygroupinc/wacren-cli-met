@@ -116,6 +116,19 @@ export default function ContactPage() {
             {/* Right Column: Form */}
             <div className="contact-form-card">
               <form onSubmit={handleSubmit}>
+                <div className="form-alert">
+                  <div className="form-alert-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                  </div>
+                  <p className="form-alert-text">
+                    Digital form submissions are currently offline during system maintenance. For immediate assistance, please connect with us directly at <a href="mailto:climet@wacren.net">climet@wacren.net</a> or use the contact information provided on the left.
+                  </p>
+                </div>
+
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
                   <input 
@@ -126,7 +139,7 @@ export default function ContactPage() {
                     className="form-input"
                     value={formState.name}
                     onChange={handleChange}
-                    required
+                    disabled
                   />
                 </div>
 
@@ -140,7 +153,7 @@ export default function ContactPage() {
                     className="form-input"
                     value={formState.email}
                     onChange={handleChange}
-                    required
+                    disabled
                   />
                 </div>
 
@@ -154,6 +167,7 @@ export default function ContactPage() {
                     className="form-input"
                     value={formState.phone}
                     onChange={handleChange}
+                    disabled
                   />
                 </div>
 
@@ -167,6 +181,7 @@ export default function ContactPage() {
                     className="form-input"
                     value={formState.company}
                     onChange={handleChange}
+                    disabled
                   />
                 </div>
 
@@ -179,24 +194,13 @@ export default function ContactPage() {
                     className="form-input form-textarea"
                     value={formState.message}
                     onChange={handleChange}
-                    required
+                    disabled
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn-submit" disabled={isSubmitting}>
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                <button type="submit" className="btn-submit" disabled style={{ opacity: 0.5, cursor: 'not-allowed' }}>
+                  Form Submissions Temporarily Unavailable
                 </button>
-
-                {submitStatus === "success" && (
-                  <p style={{ marginTop: "16px", color: "var(--green)", fontWeight: "600", fontSize: "14px" }}>
-                    Thank you! Your message has been sent successfully.
-                  </p>
-                )}
-                {submitStatus === "error" && (
-                  <p style={{ marginTop: "16px", color: "#DC2626", fontWeight: "600", fontSize: "14px" }}>
-                    Oops! Something went wrong. Please try again or contact us directly.
-                  </p>
-                )}
               </form>
             </div>
           </div>

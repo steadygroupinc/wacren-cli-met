@@ -21,6 +21,9 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
               </div>
             </div>
             <p className="footer-about">WACREN CLI-MET is the West and Central African Research and Education Network&apos;s regional programme for climate and meteorological infrastructure, building the digital backbone for a climate-resilient Africa.</p>
+            <div className="footer-attribution">
+              The WACREN CLI-MET Program is supported by the AfricaConnect Project co-funded by the European Union through the Global Gateway Program.
+            </div>
 
             <div className="footer-social">
               {/* LinkedIn */}
@@ -33,7 +36,7 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
               </a>
               {/* Mastodon */}
               <a href="https://mastodon.social/@wacren" target="_blank" rel="noopener" className="footer-social-link" aria-label="Mastodon">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.303 7.758.148 10.33.148 13.41c0 1.132.012 2.256.034 3.342.04 1.783.35 3.556 1.007 5.175 1.43 3.474 4.755 3.991 8.112 4.084 2.19.06 4.404-.315 6.422-1.038.58-.208 1.011-.74 1.011-1.353v-1.23c0-.61-.412-1.143-.994-1.334-.582-.192-1.206-.062-1.657.34-.51.455-1.32.762-2.186.912-2.006.348-4.23.246-6.17-.303-1.026-.29-2.057-.803-2.102-2.522-.01-.37-.013-.756-.013-1.154h15.486c.06.007.115.007.172.007.567 0 1.123-.456 1.123-1.02v-6.99c0-2.22-.05-3.664-.132-5.243zM18.81 14.88h-2.173v-4.102c0-.52-.138-.952-.414-1.294-.277-.342-.644-.512-1.133-.512-.49 0-.856.17-1.134.512-.277.342-.413.774-.413 1.294v1.84h-2.172v-1.84c0-.52-.137-.952-.414-1.294-.277-.342-.644-.512-1.133-.512-.49 0-.856.17-1.134.512-.277.342-.413.774-.413 1.294v4.102H6.918s0-5.465 0-6.423c0-.52.138-.952.414-1.294.277-.342.644-.512 1.133-.512.49 0 .856.17 1.134.512.277.342.413.774.413 1.294v1.23h2.172v-1.23c0-.52.137-.952.414-1.294.277-.342.644-.512 1.133-.512.49 0 .856.17 1.134.512.277.342.413.774.413 1.294v6.423h2.172s0-5.465 0-6.423c0-.52.138-.952.414-1.294.277-.342.644-.512 1.133-.512.49 0 .856.17 1.134.512.277.342.413.774.413 1.294v6.423z"/></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.193 7.879c0-5.206-3.411-6.732-3.411-6.732C18.062.357 15.108.025 12.041 0h-.076c-3.068.025-6.02.357-7.74 1.147 0 0-3.411 1.526-3.411 6.732 0 1.192-.023 2.613 0 4.04.08 4.791.936 9.507 4.565 10.961 1.834.734 3.655.939 5.308.991 3.486.109 6.529-.395 6.529-.395l-.092-2.207s-2.577.745-6.528.531c-3.948-.213-4.141-2.025-4.214-3.419-.011-.202-.015-.39-.015-.553l15.485.011c.066-2.991.047-6.727-.06-8.182zm-4.93 9.182h-2.461v-6.574c0-1.352-.57-2.037-1.707-2.037-1.257 0-1.886.812-1.886 2.431v3.587h-2.425v-3.587c0-1.619-.629-2.431-1.886-2.431-1.137 0-1.706.685-1.706 2.037v6.574H3.729V9.308c0-1.353.344-2.433 1.035-3.241.71-.83 1.637-1.255 2.783-1.255 1.332 0 2.34.513 3.027 1.542l.62 1.059.62-1.059c.687-1.029 1.695-1.542 3.027-1.542 1.146 0 2.074.425 2.783 1.255.69.808 1.036 1.888 1.036 3.241v7.753z" /></svg>
               </a>
               {/* X / Twitter */}
               <a href="https://twitter.com/wacren" target="_blank" rel="noopener" className="footer-social-link" aria-label="X (Twitter)">
@@ -66,11 +69,8 @@ export default function Footer({ backToTopVisible, scrollToTop }: FooterProps) {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© WACREN. West and Central African Research and Education Network, Climate &amp; Meteorology Programme (CLI-MET)</span>
-          <div className="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Accessibility</a>
+          <div className="footer-copyright">
+            <span>© WACREN. West and Central African Research and Education Network, Climate &amp; Meteorology Programme (CLI-MET)</span>
           </div>
         </div>
       </footer>
